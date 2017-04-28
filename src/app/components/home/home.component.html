@@ -1,0 +1,14 @@
+<h1>Noticias</h1>
+<div class="container">
+  <div class="row">
+    <div class="news" *ngFor="let item of news">
+      <hr />
+      <h2>{{item.title}}</h2>
+      <hr />
+      <p>{{item.text}}</p>
+      <hr />
+      <span><p>{{item.timestamp}}</p></span>
+      <hr />
+    </div>
+  </div>
+</div>

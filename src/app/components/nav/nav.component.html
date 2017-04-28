@@ -1,0 +1,24 @@
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" (click)="switchOpenedState()">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" [routerLink]="['/']">Oc&eacute;ano Azul</a>
+    </div>
+    <div class="collapse navbar-collapse" [ngClass]="{in: openedState}">
+      <ul class="nav navbar-nav navbar-left">
+        <li [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact: true}"><a [routerLink]="['/']" (click)="setOpenedStateFalse()">Inicio</a></li>
+        <li [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact: true}"><a [routerLink]="['/gallery']" (click)="setOpenedStateFalse()">Galer&iacute;a</a></li>
+        <li [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact: true}"><a [routerLink]="['/about']" (click)="setOpenedStateFalse()">Nosotros</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact: true}"><a [routerLink]="['/contact']" (click)="setOpenedStateFalse()">Contacto</a></li>
+        <li [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact: true}"><a [routerLink]="['/login']" (click)="setOpenedStateFalse()">Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
