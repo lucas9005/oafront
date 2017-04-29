@@ -2,10 +2,6 @@
 <div class="container">
   <div class="row">
     <div class="col-xs-12 col-sm-6">
-      <p-gmap [options]="options" [style]="{'width':'100%','height':'65vh'}"></p-gmap>
-    </div>
-    <div class="col-xs-12 col-sm-6">
-      <hr />
       <p><span>Oc&eacute;ano Azul Eventos</span></p>
       <p>Maracaibo, Zulia, Venezuela</p>
       <p>+58 (414) 6145081</p>
@@ -26,7 +22,9 @@
         </div>
         <button type="submit" class="btn btn-primary">Enviar Consulta</button>
       </form>
-      <hr />
+    </div>
+    <div class="col-xs-12 col-sm-6">
+      <p-gmap [options]="options" [style]="{'width':'100%', 'height':'65vh', 'margin-bottom':'15px'}"></p-gmap>
     </div>
   </div>
 </div>
