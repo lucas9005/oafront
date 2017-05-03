@@ -1,22 +1,22 @@
 footer {
     border-radius: 0px;
     margin: 0px;
-}
-
-p {
-    margin-top: 20px;
-    color: #4582ec;
-}
- li {
-    text-align: center;
- }
-
-.glyphicon {
-    font-size: 14px;
-}
-
-.btn-social-icon {
-    width: 40px;
-    height: 40px;
-    display: inline-block;
+    .container {
+        padding-right: 0px;
+        li {
+            text-align: center;
+            p {
+                margin-top: 20px;
+                color: #4582ec;
+                .glyphicon {
+                    font-size: 14px;
+                }
+            }
+            .btn-social-icon {
+                width: 40px;
+                height: 40px;
+                display: inline-block;
+            }
+        }
+    }
 }
