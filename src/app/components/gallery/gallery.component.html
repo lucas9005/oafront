@@ -7,8 +7,8 @@
           <img src={{image.src}} alt={{image.src}}>
         </button>
       </div>
-      <div class="modal fade blur" tabindex="-1" [ngClass]="{in: openedState, display: openedState}">
-        <img src={{openedSrc}} alt={{openedAlt}} (click)="setOpenedStateFalse()">
+      <div class="modal fade blur" tabindex="-1" [ngClass]="{in: openedState, display: openedState}" (click)="setOpenedStateFalse()">
+        <img src={{openedSrc}} alt={{openedAlt}}>
       </div>
     </div>
   </div>
