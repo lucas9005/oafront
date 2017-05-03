@@ -1,18 +1,15 @@
 .display {
-    display: block;
-    z-index: 1051;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.display img {
+    max-width: 75vw;
 }
 
 .blur {
-    z-index: 1050;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
     background-color: rgba(0, 0, 0, 0.75);
-}
-
-.modal-dialog {
-    margin-top: calc(50vh - 250px);
 }

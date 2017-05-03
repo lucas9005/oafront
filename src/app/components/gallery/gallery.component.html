@@ -7,15 +7,9 @@
           <img src={{image.src}} alt={{image.src}}>
         </button>
       </div>
-      <div class="modal fade" tabindex="-1" [ngClass]="{in: openedState, display: openedState}">
-        <div class="modal-dialog modal-lg">
-          <div class="modal-content">
-            <img class="col-xs-12" src={{openedSrc}} alt={{openedAlt}} (click)="setOpenedStateFalse()">
-          </div>
-        </div>
+      <div class="modal fade blur" tabindex="-1" [ngClass]="{in: openedState, display: openedState}">
+        <img src={{openedSrc}} alt={{openedAlt}} (click)="setOpenedStateFalse()">
       </div>
     </div>
   </div>
-</div>
-<div class="blur" *ngIf="openedState">
 </div>
